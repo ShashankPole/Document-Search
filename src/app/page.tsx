@@ -106,7 +106,7 @@ export default function ChatDocAI() {
     const files = event.target.files
     if (files && files.length > 0) {
       const file = files[0]
-      // Check if file is one of the supported formats
+      
       const validTypes = [
         ".pdf",
         ".txt",
@@ -127,7 +127,7 @@ export default function ChatDocAI() {
         alert("Please upload a supported file format (PDF, TXT, CSV, DOCX)")
       }
     }
-    // Reset the input value so the same file can be uploaded again if needed
+    
     if (event.target) {
       event.target.value = ""
     }
@@ -148,7 +148,7 @@ export default function ChatDocAI() {
 
     if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
       const file = e.dataTransfer.files[0]
-      // Check if file is one of the supported formats
+      
       const validTypes = [
         ".pdf",
         ".txt",
